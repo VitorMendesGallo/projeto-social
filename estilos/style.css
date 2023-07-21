@@ -50,15 +50,26 @@ section#redes-sociais {
 section#redes-sociais img {
   width: 50px;
   border-radius: 50%;
+  box-shadow: 2px 1px 8px 0px rgba(0, 0, 0, 0.485);
+  box-sizing: border-box;
+}
+
+section#redes-sociais img:hover{
+  border: solid rgba(255, 255, 255, 0.608);
+  transform: translate(-3px , -3px);
+  box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.434);
+  transition: transform .3s , border .2s;
+  
 }
 
 @media (max-width: 463px) {
   section#telefone {
     width: calc(311px - 80px);
+    height: calc(627px - 160px);
   }
 
   iframe#tela {
-    top: calc(80px + 61px);
+    top: calc(80px - 19px);
     left: calc(23px - 6px);
     width: calc(265.5px - 68px);
     height: calc(470px - 122px);
